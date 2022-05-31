@@ -520,7 +520,7 @@ class Params:
         self.areaRng = [[0 ** 2, 1e5 ** 2], [32 ** 2, 96 ** 2], [96 ** 2, 1e5 ** 2]]
         self.areaRngLbl = ['all', 'medium', 'large']
         self.useCats = 1
-        self.kpt_oks_sigmas = np.array([.25, .25, .25, .25])/10.0
+        self.kpt_oks_sigmas = np.array([0.068, 0.066, 0.066, 0.092, 0.094, 0.094])/10.0
 
     def __init__(self, iouType='segm'):
         if iouType == 'segm' or iouType == 'bbox':
